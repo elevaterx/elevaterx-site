@@ -103,12 +103,22 @@
   .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
   @media(max-width:860px){.services{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.services{grid-template-columns:1fr}}
-  .svc{border:1px solid var(--line);border-radius:14px;padding:24px;transition:.15s}
+  .svc{display:block;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:14px;padding:24px;transition:.15s}
   .svc:hover{border-color:var(--teal);box-shadow:0 6px 22px rgba(15,181,166,.09);transform:translateY(-2px)}
   .svc .ic{width:40px;height:40px;margin-bottom:14px}
   .svc h3{font-size:17px;margin-bottom:6px}
   .svc p{color:var(--gray);font-size:13.5px;margin:0}
   .svc .out{display:block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--teal-d)}
+  /* engagement examples */
+  .examples{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .example-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:36px}
+  @media(max-width:720px){.example-grid{grid-template-columns:1fr}}
+  .example{background:#fff;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:12px;padding:24px}
+  .example .type{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--teal-d)}
+  .example h3{font-size:19px;margin:8px 0 10px}
+  .example p{color:var(--gray);font-size:13.5px;margin:0}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+  .tags span{background:#e5f7f5;color:#07645e;border-radius:5px;padding:4px 7px;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
   /* approach */
   .approach{background:var(--panel)}
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
@@ -157,6 +167,7 @@
     <a href="#top" aria-label="ElevateRx home"><svg class="logo" viewBox="0 0 611.5 115" aria-hidden="true" focusable="false"><use href="#erx-knockout"/></svg></a>
     <nav class="links">
       <a href="#services">Services</a>
+      <a href="#examples">Examples</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -194,42 +205,76 @@
     <h2 class="sec">Strategy across your full pharmacy footprint.</h2>
     <p class="lead">Programs that get built and accredited, then measured against a financial model you can defend to your board.</p>
     <div class="services">
-      <div class="svc">
+      <a class="svc" href="services/340b-strategy.html">
         <svg class="ic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#erx-chevrons"/></svg>
         <h3>340B Program Strategy</h3>
         <p>Stand up or optimize a 340B program — eligibility, contract pharmacy, compliance posture, and capture.</p>
         <span class="out">→ more capture, audit-ready</span>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="services/specialty-pharmacy.html">
         <svg class="ic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#erx-chevrons"/></svg>
         <h3>Specialty Pharmacy Launch</h3>
         <p>From business case to accreditation (URAC / ACHC / NCQA / NABP) and payer &amp; LDD access.</p>
         <span class="out">→ in-house scripts, retained margin</span>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="services/mail-infusion.html">
         <svg class="ic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#erx-chevrons"/></svg>
         <h3>Mail &amp; Infusion Services</h3>
         <p>Retail, mail, ambulatory infusion, and home infusion: which to build, in what order, and why.</p>
         <span class="out">→ build the right lines, in the right order</span>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="services/financial-modeling.html">
         <svg class="ic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#erx-chevrons"/></svg>
         <h3>Financial Modeling &amp; Pro Formas</h3>
         <p>Opportunity sizing and pro formas that turn a pharmacy strategy into a defensible P&amp;L.</p>
         <span class="out">→ the number behind the plan</span>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="services/accreditation-implementation.html">
         <svg class="ic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#erx-chevrons"/></svg>
-        <h3>Prescription Benefit Strategy</h3>
-        <p>Design and manage prescription benefit plans that align cost, access, and your own pharmacy assets.</p>
-        <span class="out">→ cost, access, and your own assets aligned</span>
-      </div>
+        <h3>Accreditation &amp; Implementation</h3>
+        <p>Connect standards, policies, evidence, owners, dependencies, and launch execution.</p>
+        <span class="out">→ move from readiness to implementation</span>
+      </a>
       <div class="svc">
         <svg class="ic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#erx-chevrons"/></svg>
         <h3>Assessment &amp; Roadmap</h3>
         <p>A comprehensive read of your current footprint and a prioritized plan to grow its value.</p>
         <span class="out">→ know what's worth doing first</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad examples" id="examples">
+  <div class="wrap">
+    <div class="kick">Examples of the work</div>
+    <h2 class="sec">Strategy translated into operating decisions.</h2>
+    <p class="lead">ElevateRx engagements combine assessment, financial analysis, implementation planning, and ongoing advisory support around each organization's needs.</p>
+    <div class="example-grid">
+      <article class="example">
+        <div class="type">Rural health network</div>
+        <h3>From enterprise assessment to specialty-pharmacy development</h3>
+        <p>A system-wide assessment connected prescribing opportunity, financial performance, service scope, organization, and 340B strategy. ElevateRx later connected the system with a regional specialty-pharmacy partner and continued advising as 340B conditions changed.</p>
+        <div class="tags"><span>Enterprise strategy</span><span>Specialty pharmacy</span><span>340B advisory</span></div>
+      </article>
+      <article class="example">
+        <div class="type">Community health center</div>
+        <h3>From pharmacy roadmap to a board-approved growth plan</h3>
+        <p>After evaluating owned-pharmacy and contract-pharmacy performance, ElevateRx remained as an advisor through a leadership transition, budgeting and forecasting cycles, and development of a specialty-pharmacy business plan approved by the board.</p>
+        <div class="tags"><span>Performance assessment</span><span>Financial modeling</span><span>Business planning</span></div>
+      </article>
+      <article class="example">
+        <div class="type">Regional hospital</div>
+        <h3>Testing an infusion partnership before committing resources</h3>
+        <p>An infusion and 340B analysis examined eligibility, benefit ownership, drug exclusions, site requirements, and operating economics. It showed why one apparently attractive structure should not proceed and identified a more credible alternative for diligence.</p>
+        <div class="tags"><span>Infusion strategy</span><span>Partnership analysis</span><span>Decision support</span></div>
+      </article>
+      <article class="example">
+        <div class="type">Critical access hospital</div>
+        <h3>Expanding rural access while aligning pharmacy leadership</h3>
+        <p>A pharmacy and 340B roadmap led to non-cold-chain home delivery, distributed pickup, reorganized pharmacy and 340B leadership, and promotion of the retail manager into a director role.</p>
+        <div class="tags"><span>Local fulfillment</span><span>Organization design</span><span>340B performance</span></div>
+      </article>
     </div>
   </div>
 </section>
